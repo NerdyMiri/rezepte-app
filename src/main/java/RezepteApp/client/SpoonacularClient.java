@@ -1,3 +1,6 @@
+package RezepteApp.client;
+
+import RezepteApp.model.Recipe;
 import io.github.cdimascio.dotenv.Dotenv;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -47,13 +50,13 @@ public class SpoonacularClient {
                 // Dann das "recipes"-Array(ein Ast) rausholen
                 JsonNode recipesNode = root.get("recipes");
 
-                // Dann das Array in eine Liste von Recipe-Objekten umwandeln
+                // Dann das Array in eine Liste von RezepteApp.model.Recipe-Objekten umwandeln
                 List<Recipe> rezepte = mapper.readValue(recipesNode.toString(), new TypeReference<>() {});
-                // Die Klasse Recipe muss entsprechend definiert sein (mit Feldern wie title, ingredients, etc.).
+                // Die Klasse RezepteApp.model.Recipe muss entsprechend definiert sein (mit Feldern wie title, ingredients, etc.).
 
                 for (Recipe r : rezepte) {
                     System.out.println(r); // Gibt jedes Rezept-Objekt in der Konsole aus
-                    // toString()-Methode in der Recipe-Klasse implementieren, um sinnvolle Ausgaben zu bekommen.
+                    // toString()-Methode in der RezepteApp.model.Recipe-Klasse implementieren, um sinnvolle Ausgaben zu bekommen.
                 }
             } else {
                 System.out.println("Fehler: " + response.code());   // Wenn die Antwort nicht erfolgreich war

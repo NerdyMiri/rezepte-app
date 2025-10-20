@@ -1,10 +1,14 @@
+package RezepteApp;
+
+import RezepteApp.client.SpeisekammerClient;
+import RezepteApp.client.SpoonacularClient;
 import io.github.cdimascio.dotenv.Dotenv;
 
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        // SpoonacularClient.testVerbindung();
+        // RezepteApp.client.SpoonacularClient.testVerbindung();
 
         List<String> zutatenSpeisekammer = List.of("Paprika", "Reis", "Tofu");
         SpoonacularClient.findByIngredients(zutatenSpeisekammer);

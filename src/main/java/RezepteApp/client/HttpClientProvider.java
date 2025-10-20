@@ -1,3 +1,5 @@
+package RezepteApp.client;
+
 import okhttp3.OkHttpClient;
 
 public class HttpClientProvider {
