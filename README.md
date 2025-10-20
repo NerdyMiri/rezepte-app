@@ -15,7 +15,7 @@ So entsteht eine praktische Lösung gegen Lebensmittelverschwendung – und die 
 
 ## Nächste Schritte
 - Schöne Ausgabe der Ergebnisse (z. B. im Terminal oder Browser)
-- Verbindung zu deiner Speisekammer-App
+- Verbindung zur Speisekammer-App
 - Tests & kleine Verbesserungen im Code
 - CI/CD einrichten (automatische Tests auf GitHub)
 
@@ -25,4 +25,4 @@ So entsteht eine praktische Lösung gegen Lebensmittelverschwendung – und die 
 - (Optional) Spring Boot für spätere Web-Version
 
 ## Lizenz
-MIT – darf frei verwendet und angepasst werden.
+darf frei verwendet und angepasst werden.
